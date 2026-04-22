@@ -154,7 +154,7 @@ export default function App() {
               {
                 title: "Mumbai University (RGIT)",
                 degree: "B.E. in Information Technology",
-                date: "2024 — Present",
+                date: "2025 — Present",
                 icon: <GraduationCap className="w-4 h-4 text-sky-400" />,
                 active: true,
               },
