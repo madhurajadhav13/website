@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0f172a] text-[#f1f5f9] font-sans antialiased selection:bg-sky-500/30;
+  }
+}
+
+.glass {
+  @apply bg-[#1e293b]/45 backdrop-blur-xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.25)];
+}
+
+.glass-card {
+  @apply bg-[#1e293b]/45 backdrop-blur-xl border border-white/10 shadow-[0_10px_40px_rgba(0,0,0,0.25)] rounded-[28px] p-8 md:p-10 transition-all duration-300 relative overflow-hidden;
+}
+
+.glass-card:hover {
+  @apply border-sky-400/20 bg-[#1e293b]/50;
+}
+
+.text-gradient {
+  @apply text-sky-400 font-bold;
+}
+
+.btn-glass {
+  @apply bg-sky-400/15 border border-sky-400/30 text-sky-400 rounded-xl px-6 py-2.5 font-bold uppercase text-[11px] tracking-widest transition-all;
+}
+
+.btn-glass:hover {
+  @apply bg-sky-400/25 scale-[1.02] shadow-[0_0_20px_rgba(56,189,248,0.2)];
+}
+
+.skill-bar {
+  @apply h-1.5 bg-white/5 rounded-full mt-2 relative overflow-hidden;
+}
+
+.skill-progress {
+  @apply h-full rounded-full transition-all duration-1000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#0f172a];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700/50 rounded-full hover:bg-slate-600/50 transition-colors;
+}
